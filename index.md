@@ -161,8 +161,8 @@ See the FHIR Specification for the data type definitions and optional elements f
 - [OperationOutcome](http://www.hl7.org/implement/standards/fhir/operationoutcome.html)
 
 #### Example Messages
-- Successful Request: [JSON](icare-data-submission-response-example-01.md) 
-- Rejected Request 1: [JSON](icare-data-submission-response-example-02.md) 
+- Successful Request: [JSON](icare-data-submission-response-json-example-01.md) 
+- Rejected Request 1: [JSON](icare-data-submission-response-json-example-02.md) 
 
 
 ## Message Delivery Mechanism
