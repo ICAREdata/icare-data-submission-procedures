@@ -117,7 +117,7 @@ The message header will contain a single data element that reference a Parameter
 
 #### Example Message
 
-- Single Request Parameter: [JSON](icare-data-submission-request-json-example.html) 
+- Example ICAREdata Submission message: [JSON](icare-data-submission-request-json-example.html) 
 
 
 ### icare-data-study response
