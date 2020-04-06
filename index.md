@@ -6,10 +6,6 @@ layout: default
 
 version 0.1
 
-11 November 2019
-
-The MITRE Corporation
-
 * Table of Contents
 {:toc}
 
@@ -117,7 +113,7 @@ The message header will contain a single data element that reference a Parameter
 
 #### Example Message
 
-- Example ICAREdata Submission message: [JSON](icare-data-submission-request-json-example.html) 
+- Example ICAREdata Submission message: [JSON](icare-data-submission-request-json-example.md) 
 
 
 ### icare-data-study response
@@ -165,8 +161,8 @@ See the FHIR Specification for the data type definitions and optional elements f
 - [OperationOutcome](http://www.hl7.org/implement/standards/fhir/operationoutcome.html)
 
 #### Example Messages
-- Successful Request: [JSON](icare-data-submission-response-example-01.html) 
-- Rejected Request 1: [JSON](icare-data-submission-response-example-02.html) 
+- Successful Request: [JSON](icare-data-submission-response-example-01.md) 
+- Rejected Request 1: [JSON](icare-data-submission-response-example-02.md) 
 
 
 ## Message Delivery Mechanism
