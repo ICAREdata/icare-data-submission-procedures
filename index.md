@@ -1,13 +1,8 @@
----
-layout: default
----
+
 
 # ICAREdata Submission Procedures
 
 version 0.1
-
-* Table of Contents
-{:toc}
 
 ## Introduction
 

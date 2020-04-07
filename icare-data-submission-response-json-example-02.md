@@ -1,6 +1,4 @@
----
-layout: default
----
+
 # icare-data-submission Response Message Example: JSON
 
 The following message returns an error code denoting that a required element in the request message was missing.
