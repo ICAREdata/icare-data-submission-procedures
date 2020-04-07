@@ -175,7 +175,7 @@ For the purposes of authorizing site clients to the ICAREdata infrastucutre the 
 ### Client registration
 Clients for participating sites wioll be manually registered in the ICAREdata infrastuctures OAuth2 server. Sites participating in the ICAREdata Study will be provided with the client identifiers and authentication/authorization credentials.  
 
-- [SMART Backend Services: Authorization Guide](https://build.fhir.org/ig/HL7/bulk-data/authorization/index.html)
+- [SMART Backend Services: Authorization Guide](https://build.fhir.org/ig/HL7/bulk-data-export/authorization/index.html)
 ## Resources
 - [FHIR Specification](http://hl7.org/fhir/index.html)
 - [FHIR Messaging](http://www.hl7.org/implement/standards/fhir/messaging.html)
