@@ -1,5 +1,3 @@
-
-
 # icare-data-submission Message Example: JSON
 
 Below is an example ICAREdata Study submission message.
