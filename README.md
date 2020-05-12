@@ -93,7 +93,7 @@ See the Implementation Guides for mCODE and ICAREdata Study for constraints of t
 - [mCODE](http://build.fhir.org/ig/HL7/fhir-mCODE-ig/)
 - [ICAREdata Study](http://build.fhir.org/ig/standardhealth/fsh-icare/)
 
-The message header will contain a single data element that reference a Parameters resource that appears in an entry element in the message. The Parameters resource provides information that about the clinical trial and the clinical trial subject that the message pertains too.  
+The message header will contain a single data element that reference a Parameters resource that appears in an entry element in the message. The Parameters resource provides information that about the clinical trial and the clinical trial subject that the message pertains too.
 
 #### Example Message
 
@@ -105,7 +105,7 @@ When the ICAREdata Study submission infrastructure accepts and processes a data 
 
 When the ICAREdata Study submission infrastructure rejects a data submission request, the MessageHeader will have the response code value, "fatal-error" and reference an [OperationOutcome](http://hl7.org/fhir/DSTU2/operationoutcome.html) resource contained in another entry in the bundle.
 
-The OperationOutcome will have issue severity value, "error" and an issue code value from the value set, [issue-type](http://www.hl7.org/implement/standards/fhir/valueset-issue-type.html). The issue code provides ICAREdata Study clients with information about why the submission infrastructure did not process the request. Human-friendly text that complements the issue code may also be provided in an issue details element.
+The OperationOutcome will have issue severity value "error" or "fatal" and an issue code value from the value set, [issue-type](http://www.hl7.org/implement/standards/fhir/valueset-issue-type.html). The issue code provides ICAREdata Study clients with information about why the submission infrastructure did not process the request. Human-friendly text that complements the issue code may also be provided in an issue details element.
 
 #### Message Structure
 
@@ -122,8 +122,8 @@ The OperationOutcome will have issue severity value, "error" and an issue code v
           - system "urn::ICAREdataStudy" -- _namespace for ICAREdata message event code_
           - code  "icare-data-study" -- _code value to denote a submission request message_
         - response
-          - identifier -- _identifier of the message for which this is a response_
-          - code "ok | fatal-error" -- *See [Response Type](http://www.hl7.org/implement/standards/fhir/valueset-response-code.html) in the FHIR Specification*
+          - identifier -- _identifier of the request message for which this is a response; specifically the ID request message's MessageHeader.id_
+          - code "ok | fatal-error" -- _See [Response Type](http://www.hl7.org/implement/standards/fhir/valueset-response-code.html) in the FHIR Specification_
           - details -- _included only if the response code is fatal-error_
             - reference -- _reference to an OperationOutcome resource that contains information about the error_
   - entry -- _Included only if the ICAREdata Study submission system rejected the submission request_
@@ -132,7 +132,7 @@ The OperationOutcome will have issue severity value, "error" and an issue code v
       - OperationOutcome
         - id -- _identifier of this OperationOutcome resource; referenced above in MessageHeader_
         - issue
-          - severity -- "fatal-error" _The literal value, "fatal-error" denotes the ICAREdata system cannot recover from the reported error and will not process the request._
+          - severity -- "fatal | error" -- _See [Operation Outcome](https://www.hl7.org/fhir/operationoutcome-examples.html) in the FHIR Specification_
           - code -- _value from the value set,  [issue-type](http://www.hl7.org/implement/standards/fhir/valueset-issue-type.html)_
           - details -- _Optional_
             - text -- _Human-friendly description of the error or reason the ICAREdata system is rejecting the request_
