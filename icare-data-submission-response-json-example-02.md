@@ -35,7 +35,7 @@ The following message returns an error code denoting that a required element in 
         "id": "urn:uuid:03f9aa7d-b395-47b9-84e0-053678b6e4e3",
         "issue": {
           "severity": "fatal-error",
-          "code": "requierd"
+          "code": "required"
         }
       }
     }
