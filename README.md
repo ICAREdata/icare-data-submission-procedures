@@ -103,7 +103,7 @@ The message header will contain a single data element that reference a Parameter
 
 When the ICAREdata Study submission infrastructure accepts and processes a data submission request, the response message will contain a Message Header with response code value, "ok".
 
-When the ICAREdata Study submission infrastructure rejects a data submission request, the MessageHeader will have the response code value, "fatal-error" and reference an [OperationOutcome](http://hl7.org/fhir/DSTU2/operationoutcome.html) resource contained in another entry in the bundle.
+When the ICAREdata Study submission infrastructure rejects a data submission request, the MessageHeader will have the response code value, "fatal-error" and reference an [OperationOutcome](https://www.hl7.org/fhir/operationoutcome.html) resource contained in another entry in the bundle.
 
 The OperationOutcome will have issue severity value "error" or "fatal" and an issue code value from the value set, [issue-type](http://www.hl7.org/implement/standards/fhir/valueset-issue-type.html). The issue code provides ICAREdata Study clients with information about why the submission infrastructure did not process the request. Human-friendly text that complements the issue code may also be provided in an issue details element.
 
