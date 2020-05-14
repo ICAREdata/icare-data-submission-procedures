@@ -1,5 +1,5 @@
 
-# icare-data-submission Message Example: JSON
+# icare-data-submission Response Message Example: JSON
 
 This example contains the an example response for a successful submission.
 
