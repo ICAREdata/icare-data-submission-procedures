@@ -132,7 +132,7 @@ The OperationOutcome will have issue severity value "error" or "fatal" and an is
       - OperationOutcome
         - id -- _identifier of this OperationOutcome resource; referenced above in MessageHeader_
         - issue
-          - severity -- "fatal | error" -- _See [Operation Outcome](https://www.hl7.org/fhir/operationoutcome-examples.html) in the FHIR Specification_
+          - severity -- "fatal | error" -- _See [Operation Outcome](https://www.hl7.org/fhir/operationoutcome) in the FHIR Specification for a reference to the severity ValueSet_
           - code -- _value from the value set,  [issue-type](http://www.hl7.org/implement/standards/fhir/valueset-issue-type.html)_
           - details -- _Optional_
             - text -- _Human-friendly description of the error or reason the ICAREdata system is rejecting the request_
