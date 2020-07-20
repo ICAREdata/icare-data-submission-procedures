@@ -18,9 +18,15 @@ Below is an example ICAREdata Study submission message.
           "system": "http://example.org/fhir/message-events",
           "code": "icaredata-submission"
         },
-        "sender": {},
+        "sender": {
+          "display": "Example Site ID",
+          "identifier": {
+            "system": "http://example.com/clinicalSiteIds",
+            "value": "ExampleId"
+          }
+        },
         "source": {
-          "endpoint": "http://icaredata.org/submission-client"
+          "endpoint": "http://icaredata.org/ExampleId"
         },
         "focus": [
           {
