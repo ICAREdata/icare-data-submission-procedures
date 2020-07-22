@@ -334,8 +334,7 @@ Below is an example ICAREdata Study submission message.
             }
           },
           {
-            "fullUrl": "http://example.com/
-            /careplan",
+            "fullUrl": "http://example.com/CarePlan/careplan",
             "resource": {
               "resourceType": "CarePlan",
               "id": "careplan",
