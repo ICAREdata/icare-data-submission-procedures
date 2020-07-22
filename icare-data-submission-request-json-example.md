@@ -334,7 +334,8 @@ Below is an example ICAREdata Study submission message.
             }
           },
           {
-            "fullUrl": "http://example.com/CarePlan/careplan",
+            "fullUrl": "http://example.com/
+            /careplan",
             "resource": {
               "resourceType": "CarePlan",
               "id": "careplan",
@@ -351,7 +352,7 @@ Below is an example ICAREdata Study submission message.
                       "valueDate": "2020-01-23"
                     },
                     {
-                      "url": "CarePlanChangedReason",
+                      "url": "CarePlanChangeReason",
                       "valueCodeableConcept": {
                         "coding": [
                           {
