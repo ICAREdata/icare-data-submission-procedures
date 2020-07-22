@@ -351,7 +351,7 @@ Below is an example ICAREdata Study submission message.
                       "valueDate": "2020-01-23"
                     },
                     {
-                      "url": "CarePlanChangedReason",
+                      "url": "CarePlanChangeReason",
                       "valueCodeableConcept": {
                         "coding": [
                           {
