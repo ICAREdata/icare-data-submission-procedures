@@ -48,6 +48,11 @@ The general structure of the icare-data-study message is presented below. Please
         - event
           - system "urn::ICAREdataStudy" -- _namespace for icare-data-submission message event code_
           - code  "icare-data-submission" -- _code value to denote a icare-data-submission message_
+        - sender
+          - display -- _visual display name of the sending clinical site_
+          - identifier -- _an identifier indicating the sending clinical site_
+            - system -- _namespace for clinical site identifier_
+            - value -- _a clinical site id indicating the sending clinical site_
         - source
           - endpoint -- _the address to which responses to this message should be sent_
         - focus
