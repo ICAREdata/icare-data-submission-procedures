@@ -6,7 +6,7 @@ version 0.1
 
 This document outlines the submission procedures and data expectations for the ICAREdata™ Study.  The interface leverages [FHIR Messaging](http://www.hl7.org/implement/standards/fhir/messaging.html)
 
-### Target Audience and Expectations
+### Target Audience & Expectations
 
 The primary audience for this document are those that are directly involved in the ICAREdata Study data submission process, though the content is relevant for anyone involved in the study itself.
 
