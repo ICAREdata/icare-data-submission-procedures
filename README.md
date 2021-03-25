@@ -104,7 +104,7 @@ The message header will contain a single data element that reference a Parameter
 
 ### icare-data-study response
 
-When the ICAREdata Study submission infrastructure accepts and processes a data submission request, the response message will contain a Message Header with response code value, "ok".
+When the ICAREdata Study submission infrastructure accepts and processes a data submission request, the response message will contain a Message Header with response code value "ok".
 
 When the ICAREdata Study submission infrastructure rejects a data submission request, the MessageHeader will have the response code value, "fatal-error" and reference an [OperationOutcome](https://www.hl7.org/fhir/operationoutcome.html) resource contained in another entry in the bundle.
 
