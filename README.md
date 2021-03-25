@@ -4,8 +4,6 @@ version 0.1
 
 ## Introduction
 
-### Purpose
-
 This document outlines the submission procedures and data expectations for the ICAREdata™ Study.  The interface leverages [FHIR Messaging](http://www.hl7.org/implement/standards/fhir/messaging.html)
 
 ### Target Audience and Expectations
